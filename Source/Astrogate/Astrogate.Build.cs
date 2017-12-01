@@ -14,7 +14,7 @@ public class Astrogate : ModuleRules
         PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "ProceduralMeshComponent" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
-
+		PrivateDependencyModuleNames.Add("OnlineSubsystem");
         DynamicallyLoadedModuleNames.Add("OnlineSubsystemSteam");
     }
 }
