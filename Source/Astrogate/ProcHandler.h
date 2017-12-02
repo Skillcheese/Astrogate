@@ -260,13 +260,14 @@ public:
 		TArray<FCoord> GetAutoCrafters();
 
 	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
+		TArray<FCoord> GetDisruptors();
+
+	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
 		TArray<FCoord> GetAllInventories();
 
 	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
 		TArray<FCoord> GetLights();
 
-	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
-		TArray<FCoord> GetDisruptors();
 
 	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
 		void GetTransportInventories(TArray<FCoordSet>& Extract, TArray<FCoordSet>& Inject);

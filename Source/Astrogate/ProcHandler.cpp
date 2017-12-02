@@ -483,6 +483,9 @@ TArray<FCoord> UProcHandler::GetAllInventories()
 	r.Append(GetRefineriesTier2());
 	r.Append(GetManufacturingPlants());
 	r.Append(GetAutoCrafters());
+	r.Append(GetDisruptors());
+	r.Append(GetShopSellers());
+	r.Append(GetShopReceivers());
 	return r;
 }
 
