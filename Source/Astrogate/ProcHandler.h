@@ -266,6 +266,9 @@ public:
 		TArray<FCoord> GetLights();
 
 	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
+		TArray<FCoord> GetDisruptors();
+
+	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
 		void GetTransportInventories(TArray<FCoordSet>& Extract, TArray<FCoordSet>& Inject);
 
 	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")

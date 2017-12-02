@@ -492,6 +492,12 @@ TArray<FCoord> UProcHandler::GetLights()
 	return r;
 }
 
+TArray<FCoord> UProcHandler::GetDisruptors()
+{
+	TArray<FCoord> r = GetCoordsOfBlockType(23);
+	return r;
+}
+
 TArray<FCoord> UProcHandler::GetExtractors()
 {
 	TArray<FCoord> r = GetCoordsOfBlockType(12);
