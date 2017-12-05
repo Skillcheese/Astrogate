@@ -1,0 +1,7 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build.
+  Creating makefile for hot reloading AstrogateEditor (changes to module files)
+  Compiling game modules for hot reload
+  Performing full C++ include scan (no include cache file)
+  Parsing headers for AstrogateEditor
+    Running UnrealHeaderTool "G:\Astrogate\Astrogate\Astrogate.uproject" "G:\Astrogate\Astrogate\Intermediate\Build\Win64\AstrogateEditor\DebugGame\AstrogateEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(41,5): warning MSB5021: "cmd" and its child processes are being terminated in order to cancel the build.
