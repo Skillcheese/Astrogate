@@ -1,3 +1,0 @@
-G:\Astrogate\Astrogate\Source\Astrogate\Astrogate.Build.cs
-G:\Astrogate\Astrogate\Source\Astrogate.Target.cs
-G:\Astrogate\Astrogate\Source\AstrogateEditor.Target.cs
