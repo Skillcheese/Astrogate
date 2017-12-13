@@ -486,6 +486,7 @@ TArray<FCoord> UProcHandler::GetAllInventories()
 	r.Append(GetDisruptors());
 	r.Append(GetShopSellers());
 	r.Append(GetShopReceivers());
+	r.Append(GetGravitonPulseBlocks());
 	return r;
 }
 
@@ -498,6 +499,12 @@ TArray<FCoord> UProcHandler::GetLights()
 TArray<FCoord> UProcHandler::GetDisruptors()
 {
 	TArray<FCoord> r = GetCoordsOfBlockType(23);
+	return r;
+}
+
+TArray<FCoord> UProcHandler::GetGravitonPulseBlocks()
+{
+	TArray<FCoord> r = GetCoordsOfBlockType(24);
 	return r;
 }
 

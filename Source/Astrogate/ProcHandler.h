@@ -263,6 +263,9 @@ public:
 		TArray<FCoord> GetDisruptors();
 
 	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
+		TArray<FCoord> GetGravitonPulseBlocks();
+
+	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
 		TArray<FCoord> GetAllInventories();
 
 	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
