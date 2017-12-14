@@ -679,8 +679,16 @@ void UProcHandler::TakeDamage(FVector impact, const float damage)
 	const int32 toughness = Meshes[index].Toughness;
 	if (damage >= toughness) {
 		RemoveBlock(index, coord);
-		Update(index);
+		MeshesToUpdateDamage.Add(index);
 	}
+}
+
+void UProcHandler::UpdateDamage()
+{
+	for (int i = 0; i < MeshesToUpdateDamage.Num(); i++) {
+		Update(MeshesToUpdateDamage[i]);
+	}
+	MeshesToUpdateDamage.Empty();
 }
 
 void UProcHandler::GetExtent(FVector& extent, FVector& Origin)

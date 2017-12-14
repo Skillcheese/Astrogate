@@ -144,6 +144,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components|ProcHandler")
 		TArray<int32> MeshesToUpdate;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components|ProcHandler")
+		TArray<int32> MeshesToUpdateDamage;
+
 	TArray<FMeshSection2> Meshes;
 
 	int32 InitSection(int32 BlockType);
@@ -201,6 +204,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
 		void Update(const int32 Index);
+
+	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
+		void UpdateDamage();
 
 	UFUNCTION(BlueprintCallable, Category = "Components|ProcHandler")
 		bool AddManyBlocksAsync(const int32 BlockType, const TArray<FCoord> A, const TArray<FCoord> B, const int32 Num);
