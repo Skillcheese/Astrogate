@@ -679,7 +679,7 @@ void UProcHandler::TakeDamage(FVector impact, const float damage)
 	const int32 toughness = Meshes[index].Toughness;
 	if (damage >= toughness) {
 		RemoveBlock(index, coord);
-		MeshesToUpdateDamage.Add(index);
+		Update(index);
 	}
 }
 
