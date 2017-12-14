@@ -163,7 +163,7 @@ int32 UProcHandler::InitSection(int32 BlockType)
 	mesh.Mesh->AttachToComponent(this,FAttachmentTransformRules(EAttachmentRule(2), EAttachmentRule(2), EAttachmentRule(2), true),FName("None"));
 	mesh.Mesh->SetRelativeLocation(FVector(0));
 	mesh.Mesh->SetWorldScale3D(FVector(1));
-	mesh.Mesh->bUseAsyncCooking = true;
+	mesh.Mesh->bUseAsyncCooking = false;
 	return Meshes.Add(mesh);
 }
 //FName(*FString::FromInt(Meshes.Num()))
